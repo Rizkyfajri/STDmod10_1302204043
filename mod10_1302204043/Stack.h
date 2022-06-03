@@ -1,6 +1,9 @@
 #pragma once
 #include <iostream>
 
+#define top(s) (s).top
+#define tabS(s) (s).tabS
+
 using namespace std;
 
 typedef char infotype;
