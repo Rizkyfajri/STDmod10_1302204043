@@ -22,3 +22,21 @@ bool is_full(stack s) {
 	}
 }
 
+void push(stack& s, infotype x) {
+	if (is_full(s) == false) {
+		top(s) = top(s) + 1;
+		tabS(s)[top(s)] = x;
+	}
+}
+
+void pop(stack& s, infotype x) {
+	x = tabS(s)[top(s)];
+	top(s) = top(s) - 1;
+}
+
+void print_info(stack s) {
+	for (int i = top(s); i >= 0; i--) {
+		cout << tabS(s)[i] << " ";
+	}
+	cout << endl;
+}
