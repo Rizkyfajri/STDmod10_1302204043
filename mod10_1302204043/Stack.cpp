@@ -13,3 +13,12 @@ bool is_empty(stack s) {
 	}
 }
 
+bool is_full(stack s) {
+	if (top(s) == 10) {
+		return true;
+	}
+	else {
+		return false;
+	}
+}
+
